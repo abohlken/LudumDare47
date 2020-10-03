@@ -21,5 +21,6 @@ physics_material_override = SubResource( 1 )
 shape = SubResource( 2 )
 
 [node name="PlayerCar" parent="." instance=ExtResource( 2 )]
-transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 10.1732, 2.15961, 189.17 )
-mass = 12.8867
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 25, -1, 190 )
+position = Vector3( 25, -1, 189 )
+[connection signal="hit_loop_beginning" from="PlayerCar" to="." method="_on_PlayerCar_hit_loop_beginning"]
