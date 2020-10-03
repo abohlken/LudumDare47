@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/loop the loop.obj-e95289d3e1163beaaf83c36ae890d89d.mesh"
+
+[deps]
+
+files=[ "res://.import/loop the loop.obj-e95289d3e1163beaaf83c36ae890d89d.mesh" ]
+
+source_file="res://Models/loop the loop.obj"
+dest_files=[ "res://.import/loop the loop.obj-e95289d3e1163beaaf83c36ae890d89d.mesh", "res://.import/loop the loop.obj-e95289d3e1163beaaf83c36ae890d89d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

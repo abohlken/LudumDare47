@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Models/car.escn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/VehicleBody.gd" type="Script" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 2.01223, 0.744884, 1 )
+
+[node name="PlayerCar" type="VehicleBody"]
+script = ExtResource( 3 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.23992, 0 )
+shape = SubResource( 1 )
+
+[node name="FrontLeft" type="VehicleWheel" parent="."]
+transform = Transform( 5.96046e-08, 0, 1, 0, 1, 0, -1, 0, 5.96046e-08, 1.5, 0.285, -1 )
+engine_force = 50.0
+use_as_steering = true
+wheel_roll_influence = 0.3
+wheel_radius = 0.32
+wheel_rest_length = 0.07
+suspension_travel = 0.05
+suspension_stiffness = 70.0
+suspension_max_force = 1000.0
+damping_compression = 0.3
+damping_relaxation = 0.5
+
+[node name="FrontRight" type="VehicleWheel" parent="."]
+transform = Transform( 5.96046e-08, 0, 1, 0, 1, 0, -1, 0, 5.96046e-08, 1.5, 0.285, 1 )
+engine_force = 50.0
+use_as_steering = true
+wheel_roll_influence = 0.3
+wheel_radius = 0.32
+wheel_rest_length = 0.07
+suspension_travel = 0.05
+suspension_stiffness = 70.0
+suspension_max_force = 1000.0
+damping_compression = 0.3
+damping_relaxation = 0.5
+
+[node name="BackLeft" type="VehicleWheel" parent="."]
+transform = Transform( 5.96046e-08, 0, 1, 0, 1, 0, -1, 0, 5.96046e-08, -1.5, 0.285, -1 )
+engine_force = 50.0
+use_as_traction = true
+wheel_roll_influence = 0.3
+wheel_radius = 0.32
+wheel_rest_length = 0.07
+suspension_travel = 0.05
+suspension_stiffness = 70.0
+suspension_max_force = 1000.0
+damping_compression = 0.3
+damping_relaxation = 0.5
+
+[node name="BackRight" type="VehicleWheel" parent="."]
+transform = Transform( 5.96046e-08, 0, 1, 0, 1, 0, -1, 0, 5.96046e-08, -1.5, 0.285, 1 )
+engine_force = 50.0
+use_as_traction = true
+wheel_roll_influence = 0.3
+wheel_radius = 0.32
+wheel_rest_length = 0.07
+suspension_travel = 0.05
+suspension_stiffness = 70.0
+suspension_max_force = 1000.0
+damping_compression = 0.3
+damping_relaxation = 0.5
+
+[node name="car" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1, 0 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -1.53877e-07, 0.328537, -0.944491, 5.35255e-08, 0.944491, 0.328537, 1, -7.10543e-14, -1.62921e-07, -3.74962, 4.71278, 0 )
+fov = 89.7853
+far = 299.9
