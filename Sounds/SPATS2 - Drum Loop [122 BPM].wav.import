@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SPATS2 - Drum Loop [122 BPM].wav-6a5821732008e8e56f264d4599e4c0d3.sample"
+
+[deps]
+
+source_file="res://Sounds/SPATS2 - Drum Loop [122 BPM].wav"
+dest_files=[ "res://.import/SPATS2 - Drum Loop [122 BPM].wav-6a5821732008e8e56f264d4599e4c0d3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

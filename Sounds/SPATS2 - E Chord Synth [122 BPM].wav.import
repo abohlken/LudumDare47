@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SPATS2 - E Chord Synth [122 BPM].wav-a7cfa245512110723aaec59a1c822275.sample"
+
+[deps]
+
+source_file="res://Sounds/SPATS2 - E Chord Synth [122 BPM].wav"
+dest_files=[ "res://.import/SPATS2 - E Chord Synth [122 BPM].wav-a7cfa245512110723aaec59a1c822275.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

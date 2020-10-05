@@ -7,6 +7,8 @@
 extents = Vector3( 2.01223, 0.971363, 1 )
 
 [node name="PlayerCar" type="KinematicBody"]
+collision_layer = 3
+collision_mask = 3
 script = ExtResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
@@ -14,9 +16,16 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.02957, 0 )
 shape = SubResource( 1 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.944491, 0.328537, 0, -0.328537, 0.944491, -3.75, 4.713, 50 )
+transform = Transform( -1.62921e-07, 0.328537, -0.944491, 0, 0.944491, 0.328537, 1, 5.35255e-08, -1.53877e-07, -3.75, 4.713, 0 )
 fov = 89.7853
 far = 299.9
 
 [node name="car" parent="." instance=ExtResource( 1 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1, 0 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( -1.57369e-07, 0.258819, -0.965926, 4.2167e-08, 0.965926, 0.258819, 1, 0, -1.62921e-07, -3, 3, 0 )
+light_energy = 0.48
+light_specular = 0.0
+shadow_enabled = true
+shadow_bias = 4.91
